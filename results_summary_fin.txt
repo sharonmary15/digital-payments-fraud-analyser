@@ -1,0 +1,13 @@
+DIGITAL PAYMENTS FRAUD ANALYSER — RESULTS
+==========================================
+Dataset: PaySim, 6,362,620 transactions
+Fraud found only in TRANSFER and CASH_OUT (8,213 frauds, 0.13%)
+
+DETECTION RESULTS:
+- Unsupervised (Isolation Forest): 2.2% recall — fraud is structured, not outliers
+- Supervised (Random Forest): 99.6% recall, 100% precision on held-out test set
+- Top feature: errorBalanceOrig (engineered) drove 45% of decisions
+
+NETWORK ANALYSIS:
+- 44 collection-point accounts identified
+- Multiple victim accounts converging on shared destinations
